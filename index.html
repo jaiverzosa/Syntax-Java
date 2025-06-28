@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">    
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stylePortrait.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="div_navbar">
+        <div class="page_title">
+            <p class="text_title"></p>
+        </div>
+
+        <div id="navbar_buttons">
+            <a href="index.html" class="navbar_picked">HOME</a>
+            <a href="about.html" class="navbar_about">ABOUT</a>
+            <a href="projects.html" class="navbar_projects">PROJECTS</a>
+            <a href="contact.html" class="navbar_contact">CONTACT</a>
+        </div>
+    </div>
+
+    <!--SIDEBAR-->
+    <div>
+        <div class="container_sidebarNav">
+            <div class="page_title2">
+                <p class="text_title"></p>
+            </div>
+            <div class="div_button_openSidebar">
+                <img id="button_openSidebar" src="images/elements/hamburger.png" onclick="openNav()">
+            </div>
+        </div>
+
+        <div id="background_close" onclick="closeNav()"></div>
+
+        <div id="sidebar">
+            <img id="button_closeSidebar" src="images/elements/sidebar_burger.png" onclick="closeNav()">
+            <p class="sidebar_title">MENU</p>
+
+            <div id="sidebar_buttons">
+                <div class="sidebar_button">
+                    <img class="icon" src="images/elements/icon1_home.png">
+                    <a href="index.html" class="sidebar_home">HOME</a>
+                </div>
+                <div class="sidebar_button">
+                    <img class="icon" src="images/elements/icon2_about.png">
+                    <a href="about.html"  class="sidebar_about">ABOUT ME</a>
+                </div>
+                <div class="sidebar_button">
+                    <img class="icon" src="images/elements/icon3_projects.png">
+                    <a href="projects.html" class="sidebar_projects">PROJECTS</a>
+                </div>
+                <div class="sidebar_button">
+                    <img class="icon" src="images/elements/icon4_contact.png">
+                    <a href="contact.html" class="sidebar_contact">CONTACT ME</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--HOME-->
+    <div class="div_home">
+        <div class="home_texts">
+            <img class="home_hello" src="images/elements/hello.png" loading="lazy">
+            <img class="home_line" src="images/elements/line.png">
+
+        <p class="home_intro">
+        <span id="typing_text"></span>
+        </p>
+        
+        </div>
+
+        <div class="div_home_pic">
+            <img class="home_pic" src="images/elements/home_pic.png" loading="lazy">
+        </div>
+
+
+        <div class="home_buttonProject_div">
+            <a class="home_buttonProject" href="projects.html">VIEW MY PROJECTS</a>
+        </div>
+    </div>    
+
+    <script src="functions/sidebar_function.js"></script>
+    <script src="functions/typingText.js"></script>
+</body>
+</html>
